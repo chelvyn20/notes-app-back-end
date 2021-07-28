@@ -81,8 +81,6 @@ class AuthenticationsHandler {
           message: error.message,
         });
 
-        console.error(error);
-
         response.code(error.statusCode);
         return response;
       }
